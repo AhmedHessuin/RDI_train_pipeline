@@ -137,7 +137,6 @@ def train(model:tf.keras.Model, epochs:int, batch:int, data_path:str, val_path:s
 
     check_point_path="./checkpoints/"
     for model_number in range(10000):
-        check_point_path = check_point_path + f"{model_number}"
         if not path.isdir(f'./checkpoints/{model_number}'):
             check_point_path=check_point_path+f"{model_number}"
             break
