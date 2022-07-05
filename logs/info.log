@@ -1,0 +1,60 @@
+INFO 2022-07-03 03:32:18,599 [root:train.py:<module>:12]
+main run 
+
+INFO 2022-07-03 03:32:18,599 [root:train.py:<module>:149]
+train env
+
+INFO 2022-07-03 03:32:18,599 [root:train.py:train_env:22]
+starting training on gpu no: 0
+
+INFO 2022-07-03 03:32:18,600 [root:train.py:<module>:151]
+model build
+
+INFO 2022-07-03 03:32:20,328 [root:model.py:compile_model:31]
+compiled done using, optimizer=<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7f49784942e0>, loss=<tensorflow.python.keras.losses.CategoricalCrossentropy object at 0x7f4978494af0>, metrics=<function categorical_accuracy at 0x7f49d612d0d0>
+
+INFO 2022-07-03 03:32:20,328 [root:train.py:train:111]
+train started
+
+INFO 2022-07-03 03:32:20,754 [root:train.py:generator:56]
+1811 training images in Data/Train
+
+WARNING 2022-07-03 03:32:22,619 [tensorflow:data_utils.py:get_pool_class:536]
+multiprocessing can interact badly with TensorFlow, causing nondeterministic deadlocks. For high performance data pipelines tf.data is recommended.
+
+WARNING 2022-07-03 03:32:26,635 [tensorflow:deprecation.py:new_func:317]
+From /home/res12/anaconda3/envs/tf_2.3.0/lib/python3.8/site-packages/tensorflow/python/ops/summary_ops_v2.py:1277: stop (from tensorflow.python.eager.profiler) is deprecated and will be removed after 2020-07-01.
+Instructions for updating:
+use `tf.profiler.experimental.stop` instead.
+
+WARNING 2022-07-03 03:32:26,658 [tensorflow:callbacks.py:_call_batch_end_hook:325]
+Callbacks method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0118s vs `on_train_batch_end` time: 0.0270s). Check your callbacks.
+
+INFO 2022-07-03 03:32:45,550 [root:train.py:train:136]
+train finished with history{'loss': [0.1755295693874359, 0.045336298644542694, 0.05067337676882744, 0.1525246798992157], 'categorical_accuracy': [0.9241071343421936, 0.9905133843421936, 0.9832589030265808, 0.9715401530265808], 'val_loss': [0.0724104717373848, 0.08570582419633865, 0.17217475175857544, 0.1498383730649948], 'val_categorical_accuracy': [0.96875, 0.96875, 0.9791666865348816, 0.9375]} 
+
+WARNING 2022-07-03 03:32:46,306 [tensorflow:deprecation.py:new_func:317]
+From /home/res12/anaconda3/envs/tf_2.3.0/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+
+WARNING 2022-07-03 03:32:46,318 [tensorflow:deprecation.py:new_func:317]
+From /home/res12/anaconda3/envs/tf_2.3.0/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+
+INFO 2022-07-03 03:32:48,358 [tensorflow:builder_impl.py:copy_assets_to_destination_dir:774]
+Assets written to: ./checkpoints/00/assets
+
+INFO 2022-07-03 04:42:54,448 [root:train.py:<module>:12]
+main run 
+
+INFO 2022-07-03 04:42:54,448 [root:train.py:<module>:149]
+train env
+
+INFO 2022-07-03 04:42:54,448 [root:train.py:train_env:22]
+starting training on gpu no: 0
+
+INFO 2022-07-03 04:42:54,448 [root:train.py:<module>:151]
+model build
+
